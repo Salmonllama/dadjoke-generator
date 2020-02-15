@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+
+group 'com.github.salmonllama'
+version '0.0.0'
+
+sourceCompatibility = 1.8
+mainClassName = 'com.github.salmonllama.dadjoke.Main'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.squareup.okhttp3:okhttp:4.3.1'
+    implementation 'org.json:json:20190722'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+javafx {
+    version = "11.0.2"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.github.salmonllama.dadjoke.Main'
+    }
+}
