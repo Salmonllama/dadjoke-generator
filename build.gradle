@@ -5,7 +5,7 @@ plugins {
 }
 
 group 'com.github.salmonllama'
-version '0.0.0'
+version '1.0.0'
 
 sourceCompatibility = 1.8
 mainClassName = 'com.github.salmonllama.dadjoke.Main'
