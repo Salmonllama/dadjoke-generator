@@ -7,8 +7,8 @@ plugins {
 group 'com.github.salmonllama'
 version '1.0.0'
 
-sourceCompatibility = 1.8
-mainClassName = 'com.github.salmonllama.dadjoke.Main'
+sourceCompatibility = 1.11
+mainClassName = "$moduleName/com.github.salmonllama.dadjoke.Main"
 
 repositories {
     mavenCentral()
@@ -27,6 +27,6 @@ javafx {
 
 jar {
     manifest {
-        attributes 'Main-Class': 'com.github.salmonllama.dadjoke.Main'
+        attributes 'Main-Class': mainClassName
     }
 }
